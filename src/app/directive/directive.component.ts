@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DirectiveComponent implements OnInit {
 	public title: string="projet2";
 	public displayTitle: string="projet2";
-	public status: bool=true;
+	public status: boolean =true;
 	public texts: array<string>=['un','deux','trois'];
 	public inverseStatus(): void
 	{
