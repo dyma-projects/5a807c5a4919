@@ -1,0 +1,20 @@
+<p>
+  {{displayTitle}}
+</p>
+<div [ngStyle]="{width:'200px',height:'200px',backgroundColor:'red'}" (mouseenter)="displayTitle=''" (mouseleave)="displayTitle=title"></div>
+<br/>
+<input  [(ngModel)]="title" />
+<br/>
+<p *ngIf="status">
+  P1
+</p>
+<br/>
+<p *ngIf="!status">
+  P2
+</p>
+<br/>
+<input  type="button" value="mon choix" (click)="inverseStatus()"/>
+<br/>
+<ul *ngFor="let text of texts">
+	<li>{{text}}</li>
+</ul>
