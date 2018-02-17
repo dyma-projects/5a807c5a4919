@@ -9,7 +9,7 @@ export class DirectiveComponent implements OnInit {
 	public title: string="projet2";
 	public displayTitle: string="projet2";
 	public status: boolean =true;
-	public texts: array<string>=['un','deux','trois'];
+	public texts: Array<string>=['un','deux','trois'];
 	public inverseStatus(): void
 	{
 		this.status=!this.status;
